@@ -1,4 +1,20 @@
-# Basketball Play Lab
+# Basketball Play Lab: shot tracking from game video
+
+**At a glance.** You give it basketball game footage. It detects and tracks the ball and the rim
+frame by frame, finds shot attempts, and shows each one on a timeline marked made or missed.
+I built it to learn how computer vision pipelines work, using AI coding tools (Codex, Claude),
+on real high school game film.
+
+- **Pipeline:** video → ball/rim detection (YOLO11) → tracking across frames (ByteTrack) → shot
+  attempts and outcomes → web dashboard
+- **Stack:** Python, Ultralytics YOLO, OpenCV, SQLite, a local web app
+- **Status:** early-stage pilot. Detection and tracking run end to end. Made/missed has only been
+  checked against a small set of hand-labeled shots, so treat outcomes as suggestions to review,
+  not measured accuracy. Development notes live in [docs/dev-log](docs/dev-log/).
+- **Next steps:** label more shots, run the locked held-out test, and report precision and recall
+  for made/missed.
+
+## Details
 
 A fresh, independent basketball video project. It proposes editable whole
 possessions, analyzes selected possessions for made/missed shots, and suggests
@@ -18,7 +34,7 @@ of hand-labeled shots so far; treat results as review-required.
 
 For the review-batch workspace and safe local integration steps, read
 [docs/REVIEW_WORKSPACE.md](docs/REVIEW_WORKSPACE.md). The preceding local results
-are in [LOCAL_REPORT.md](LOCAL_REPORT.md). Code fetches do not transfer local videos,
+are in [LOCAL_REPORT.md](docs/dev-log/LOCAL_REPORT.md). Code fetches do not transfer local videos,
 SQLite data, weights or the unreviewed frame archive.
 
 ## Start locally
@@ -128,12 +144,12 @@ No actual GPU training or real-game accuracy evaluation has been completed.
 See [annotation and batch review](docs/ANNOTATION.md) and
 [training, checkpoint recovery and evaluation](docs/TRAINING.md) for the complete
 workflow. A real CPU checkpoint-resume smoke on artificial images has completed;
-it is software evidence only. See [cloud continuation results](CLOUD_REPORT.md)
+it is software evidence only. See [cloud continuation results](docs/dev-log/CLOUD_REPORT.md)
 for measured checks, artifact hashes and remaining blockers.
 
 ## Current handoff
 
-Read [HANDOFF.md](HANDOFF.md) before continuing. This is a paused implementation
+Read [HANDOFF.md](docs/dev-log/HANDOFF.md) before continuing. This is a paused implementation
 snapshot, not a completed or accurate basketball analytics product.
 
 Videos, labels, weights, local environments and secrets are excluded from Git.

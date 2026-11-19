@@ -3,7 +3,7 @@
 Historical report for the earlier shot-evidence flow. The current default product
 is **choose ten seconds → Analyze → tracked ball/rim video**; see
 [TRACKING_VIDEO_REPORT.md](TRACKING_VIDEO_REPORT.md) for actual browser/model
-verification and [docs/TRACKED_VIDEO.md](docs/TRACKED_VIDEO.md) for startup. The
+verification and [docs/TRACKED_VIDEO.md](../TRACKED_VIDEO.md) for startup. The
 older Quick analysis workspace remains available under Advanced tools.
 
 Base: `local/basketball-pilot-20261020`, verified exact commit
@@ -33,7 +33,7 @@ reads; a shared source with test blocks uses metadata identity rather than
 hashing held-out head/tail bytes. There is no training or evaluation action in
 this workflow.
 
-See [the product guide](docs/QUICK_ANALYSIS.md) for startup and user steps.
+See [the product guide](../QUICK_ANALYSIS.md) for startup and user steps.
 
 ## Preservation
 

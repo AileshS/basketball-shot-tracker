@@ -5,7 +5,7 @@ Continued independently from `main` at
 `cloud/basketball-pilot-20261020`. Deadline remains October 23; free resources only.
 
 Read [CLOUD_REPORT.md](CLOUD_REPORT.md) for measured results, paths and hashes, and
-[docs/ANNOTATION.md](docs/ANNOTATION.md) / [docs/TRAINING.md](docs/TRAINING.md) for
+[docs/ANNOTATION.md](../ANNOTATION.md) / [docs/TRAINING.md](../TRAINING.md) for
 tested workflows. The final chat report and `LOCAL_HANDOFF.md` identify the exact
 commit to fetch. Preserve existing local work and leave older projects untouched.
 

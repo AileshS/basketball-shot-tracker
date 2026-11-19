@@ -100,7 +100,7 @@ SHA-256: `72c1e7c64cc6054db3dc5429385630f81c2136f5935fed546e6887bfe158d306`.
 The downloader caches `artifacts/models/basketball-ball-rim.pt`; no weights or
 third-party implementation are committed. The upstream supplies no model license
 file, so verified open model licensing is not claimed. See the attribution and
-score/class definitions in [docs/TRACKED_VIDEO.md](docs/TRACKED_VIDEO.md).
+score/class definitions in [docs/TRACKED_VIDEO.md](../TRACKED_VIDEO.md).
 
 Demonstration source: that repository's `video_test_5.mp4` at the same fixed
 revision, 112.712604 seconds, 960×540, audio. Full source SHA-256:

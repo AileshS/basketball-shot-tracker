@@ -51,7 +51,7 @@ come from the selected sampling window; explicitly adjusted context is capped at
 source identity and current policy again. Playback never opens the full original
 game or uses the nearly full-game proposal as the clip interval.
 
-See [the local review guide](docs/REVIEW_WORKSPACE.md) for safe integration and
+See [the local review guide](../REVIEW_WORKSPACE.md) for safe integration and
 the user's review actions. The final chat handoff supplies the exact pushed
 commit to verify and integrate. Do not replace local data with this cloud Store.
 
